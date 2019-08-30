@@ -94,7 +94,7 @@ mod tests {
             xxfi_data: None,
             xxfi_negotiate: None,
         };
-        let xxfi_name = unsafe { CString::from_raw(xxfi_name) };
+        unsafe { CString::from_raw(xxfi_name) };
 
         let register_res = unsafe { smfi_register(smfi_desc) };
         assert_eq!(register_res, MI_FAILURE as c_int)

@@ -1,0 +1,11 @@
+[package]
+name = "libmilter-sys"
+version = "0.1.0"
+authors = ["Matt Palmer <9059517+56KBs@users.noreply.github.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.51.0"
